@@ -20,4 +20,7 @@ Encontre a variável Path em "Variáveis do Sistema" e adicione o caminho da pas
 * No terminal do VSCode - sudo apt install mave depois sudo apt-get update
 * Crie o projeto com CLI - mvn archetype:generate -DgroupId=com.example -DartifactId=processos-microservice -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
+# Execução
+* mvn spring-boot:run
+* mvn liquibase:update
 

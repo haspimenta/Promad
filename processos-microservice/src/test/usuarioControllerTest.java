@@ -1,8 +1,8 @@
-package com.example.microsservico;
+package com.example.processos;
 
-import com.example.microsservico.controller.UsuarioController;
-import com.example.microsservico.model.Usuario;
-import com.example.microsservico.repository.UsuarioRepository;
+import com.example.processos.controller.usuarioController;
+import com.example.processos.model.usuario;
+import com.example.processos.repository.usuarioRepository;
 import org.junit.jupiter.api.Test;
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -18,29 +18,29 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class UsuarioControllerTest {
+public class usuarioControllerTest {
 
     @Mock
-    private UsuarioRepository usuarioRepository;
+    private usuarioRepository usuarioRepository;
 
     @InjectMocks
-    private UsuarioController usuarioController;
+    private usuarioController usuarioController;
 
     @Test
     public void testListarUsuarios() {
-        Usuario usuario1 = new Usuario();
+        usuario usuario1 = new Usuario();
         usuario1.setId(1L);
         usuario1.setNome("João");
 
-        Usuario usuario2 = new Usuario();
+        usuario usuario2 = new Usuario();
         usuario2.setId(2L);
         usuario2.setNome("Maria");
 
-        List<Usuario> mockUsuarios = Arrays.asList(usuario1, usuario2);
+        List<usuario> mockUsuarios = Arrays.asList(usuario1, usuario2);
 
         when(usuarioRepository.findAll()).thenReturn(mockUsuarios);
 
-        List<Usuario> usuarios = usuarioController.listarUsuarios();
+        List<usuario> usuarios = usuarioController.listarUsuarios();
 
         assertEquals(2, usuarios.size());
         assertEquals("João", usuarios.get(0).getNome());

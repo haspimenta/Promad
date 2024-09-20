@@ -1,10 +1,9 @@
-package com.example.microsservico.model;
-
+package com.example.processos.model;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "usuarios")
-public class Usuario {
+public class usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
