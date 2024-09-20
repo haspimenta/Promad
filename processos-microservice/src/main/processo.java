@@ -15,8 +15,37 @@ public class processo {
     private String numeroProcesso;
 
     @OneToMany(mappedBy = "processo", cascade = CascadeType.ALL)
-    private List<Reu> reus;
+    private List<reu> reus;
 
     // Getters e Setters
+    // Getter para id
+    public Long getId() {
+        return id;
+    }
+
+    // Setter para id
+    //public void setId(Long id) {
+    //    this.id = id;
+    //}
+
+    // Getter para nome
+    public String getNome() {
+        return nome;
+    }
+
+    // Setter para nome
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    // Getter para descricao
+    public String getDescricao() {
+        return descricao;
+    }
+
+    // Setter para descricao
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
 }
 

@@ -59,3 +59,20 @@ mvn spring-boot:run
 ```
 mvn liquibase:update
 ```
+
+## Usando o Postman para testar as funcionalidades
+> O Postman é uma ferramenta gráfica que facilita o envio de requisições HTTP. Vamos testar os seguintes endpoints com ela:
+
+* POST: Salvar números de processos.
+* GET: Listar números de processos.
+* DELETE: Excluir número de processo.
+* PUT: Adicionar réu a um processo.
+
+* Instalar o Postman
+> Se ainda não o tiver instalado, você pode baixar o Postman no site oficial.
+```
+https://www.postman.com/downloads/
+```
+
+* Iniciar o Spring Boot
+> Certifique-se de que o microsserviço está rodando no localhost na porta 8080. Caso contrário, ajuste o projeto para rodar nessa porta.
