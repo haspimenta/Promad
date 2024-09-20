@@ -14,5 +14,27 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
+        
+         <createTable tableName="processos">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="numero_processo" type="varchar(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="reus">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nome" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="processo_id" type="int">
+                <constraints nullable="false" foreignKeyName="fk_processo_id" references="processos(id)"/>
+            </column>
+        </createTable>
+
     </changeSet>
 </databaseChangeLog>
