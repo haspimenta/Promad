@@ -76,3 +76,52 @@ https://www.postman.com/downloads/
 
 * Iniciar o Spring Boot
 > Certifique-se de que o microsserviço está rodando no localhost na porta 8080. Caso contrário, ajuste o projeto para rodar nessa porta.
+
+## Testando as Funcionalidades
+* Testar o POST - Salvar Números de Processos
+Abra o Postman e crie uma nova requisição POST.
+Defina a URL como:
+```
+http://localhost:8080/processos
+```
+No corpo da requisição, escolha o formato raw e JSON.
+Adicione o seguinte JSON como exemplo:
+```
+{
+    "numeroProcesso": "123456"
+}
+```
+
+* Testar o GET - Listar Processos
+Crie uma nova requisição GET no Postman.
+Defina a URL como:
+```
+http://localhost:8080/processos
+```
+
+* Testar o DELETE - Excluir um Processo
+Crie uma nova requisição DELETE no Postman.
+Defina a URL como:
+> Substitua {id} pelo ID do processo que você quer deletar.
+```
+http://localhost:8080/processos/{id}
+```
+Exemplo:
+> http://localhost:8080/processos/1
+
+* Testar o PUT - Adicionar Réu a um Processo
+Crie uma nova requisição POST no Postman.
+Defina a URL como:
+```
+http://localhost:8080/reus/adicionar/{processoId}
+```
+Substitua {processoId} pelo ID de um processo existente.
+No corpo da requisição, escolha o formato raw e JSON.
+Adicione o seguinte JSON como exemplo:
+```
+{
+    "nome": "João da Silva"
+}
+```
+
+`Conclusão dos parametros do projeto sexta-feira 20/09/2024 ás 18:55h`
