@@ -1,7 +1,7 @@
 # Promad
 > **Utilizando os Spring Boot e Postgresql para microsserviços. Requisições Post, Get, Delete, Put com Postman. Adicional com Junit e Liquibase com CLI.**
 
-`Iniciando os parametros para o projeto sexta-feira dia 20-09-2011 ás 11:18h.`
+`Iniciando os parametros para o projeto sexta-feira dia 20/09/2024 ás 11:18h.`
 
 ## Objetivo
 1. Como usuário preciso salvar meus números de processos no sistema, quero poder
@@ -13,6 +13,8 @@ cadastrado anteriormente.
 4. Como usuário quero poder excluir um número de processo que salvei.
 5. Como usuário quero poder adicionar um Réu a um processo que já cadastrei
 anteriormente.
+
+6. **Pensando em ações de legado e ajustes de estrutura, o meu objetivo é demonstrar que posso trabalhar com vários tipos de situação, estudando documentação, resolvendo conflitos de merge no git - CLI - github e ajudando na reestrutura para obter as melhores práticas e gestão para manutenção.**
 
 ## Arquitetura e stack
 * VSCode: Editor de código com plugins de suporte a Spring e Java.
@@ -125,3 +127,37 @@ Adicione o seguinte JSON como exemplo:
 ```
 
 `Conclusão dos parametros do projeto sexta-feira 20/09/2024 ás 18:55h`
+
+`Melhorias e reestruturação do projeto conforme objetivo do ponto 6, no parágrafo dos Objetivos.`
+`Sabado dia 21/09/2024 ás 9:00h`
+
+> Demonstrando ação de resolução de conflitos de merge no projeto.
+`
+<img src="promad/imagens/historicomergesgithub.jpg">
+`
+> Demonstrando ação de reestruturação de projeto para melhores práticas.
+
+* Antes, em muitas situações encontramos estruturas funcionais de código, porém sem a estrutura adequada e de melhores práticas, pois a necessidade de se saber trabalhar com sistemas/códigos legados e juntamente com a leitura de documentação ir criando o documento de técnico e adequando a reestruturação.
+`
+<img src="promad/imagens/estruturaInicialFuncional.jpg">
+`
+
+* Depois
+`
+<img src="promad/imagens/estruturaFinalFuncional.jpg">
+`
+
+> Demonstrando melhores prática e organização das ações de teste. "Nesse caso, optei por usar o Postman, conforme imagem abaixo.
+`
+<img src="promad/imagens/postman.jpg">
+`
+
+## Conclusão
+* A implementação deste microserviço de processos foi uma oportunidade valiosa para aplicar meus conhecimentos em Java, Spring Boot e arquitetura de microserviços. Durante o desenvolvimento, foquei em demonstrar possibilidades de estrutura e aplicação posterior no uso das melhores práticas de programação, como a organização modular do código, separação clara de responsabilidades com o uso de camadas (Controller, Service e Repository) e a adesão aos princípios de design. Além disso, fiz questão de manter a documentação clara e atualizada, de modo a garantir que o projeto seja compreensível e sustentável no longo prazo.
+
+Pessoalmente, considero que todos os objetivos propostos foram atingidos, seguindo o padrão, com a lógica de negócio desacoplada da camada de persistência e interfaces bem definidas para a comunicação entre componentes.
+
+Em resumo, acredito que este projeto reflete não só o uso eficiente de tecnologias modernas, mas também uma atenção meticulosa ao rigor técnico e à boa engenharia de software.
+
+`Conclusão do projeto - Sabado dia 21/09/2024 ás 12:00h`
+
